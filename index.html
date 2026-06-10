@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rencana Kerja Enterprise-Lite</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character UI Profile</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #1f1a17;
+    }
+  </style>
 </head>
-<body>
 
-    <header>
-        <h1>Rencana Kerja Aplikasi Enterprise-Lite</h1>
-        <p>
-            Enterprise-Lite adalah aplikasi internal untuk membantu perusahaan
-            mengelola tugas dan mencatat waktu kerja karyawan secara sederhana.
-        </p>
-    </header>
+<body class="min-h-screen flex items-center justify-center p-4">
 
-    <main>
-        <section>
-            <h2>Fitur Utama</h2>
+  <main class="relative w-full max-w-5xl min-h-[650px] overflow-hidden rounded-3xl border border-yellow-200/30 bg-gradient-to-b from-[#2b241f] to-[#9b7a52] text-white shadow-2xl">
 
-            <h3>1. Auth / Login</h3>
-            <ul>
-                <li>Pengguna dapat login menggunakan username dan password.</li>
-                <li>Sistem membatasi akses hanya untuk pengguna yang terdaftar.</li>
-                <li>Setelah login, pengguna diarahkan ke halaman dashboard.</li>
-            </ul>
+    <!-- Border dekoratif -->
+    <div class="absolute inset-4 border border-yellow-100/30 rounded-2xl pointer-events-none"></div>
 
-            <h3>2. Dashboard Ringkasan</h3>
-            <ul>
-                <li>Menampilkan jumlah total tugas.</li>
-                <li>Menampilkan tugas yang sedang dikerjakan.</li>
-                <li>Menampilkan tugas yang sudah selesai.</li>
-                <li>Menampilkan ringkasan waktu kerja yang telah dicatat.</li>
-            </ul>
+    <!-- Background blur -->
+    <div class="absolute inset-0 bg-black/25"></div>
 
-            <h3>3. CRUD Tasks</h3>
-            <ul>
-                <li>Create: pengguna dapat menambahkan tugas baru.</li>
-                <li>Read: pengguna dapat melihat daftar tugas.</li>
-                <li>Update: pengguna dapat mengubah data tugas.</li>
-                <li>Delete: pengguna dapat menghapus tugas yang tidak diperlukan.</li>
-            </ul>
+    <section class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-14">
 
-            <h3>4. Time Logs</h3>
-            <ul>
-                <li>Pengguna dapat mencatat waktu mulai dan selesai pengerjaan tugas.</li>
-                <li>Sistem menghitung durasi waktu kerja.</li>
-                <li>Data waktu kerja dapat digunakan sebagai laporan produktivitas.</li>
-            </ul>
-        </section>
+      <!-- LEFT CONTENT -->
+      <div class="space-y-8">
+        <div>
+          <h1 class="text-7xl md:text-8xl font-black italic tracking-tight">
+            UI
+          </h1>
 
-        <section>
-            <h2>Tujuan Pengembangan</h2>
-            <p>
-                Tujuan pembuatan aplikasi ini adalah untuk mempermudah pemantauan
-                pekerjaan, meningkatkan kedisiplinan dalam pencatatan waktu,
-                dan membantu tim bekerja lebih teratur.
+          <div class="mt-6 inline-block bg-[#f2dfbd] text-[#1f1a17] px-6 py-3 rounded-r-full">
+            <p class="font-semibold leading-tight">
+              Trinity General School<br>
+              3rd Year<br>
+              Library Committee
             </p>
-        </section>
-        </a> Development Branch From Akbar</a>
-    </main>
+          </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2026 Enterprise-Lite Internal Task & Time Tracker</p>
-    </footer>
+        <!-- Mini portraits -->
+        <div class="space-y-4">
+          <img src="ui1.png" class="w-28 h-28 object-cover rounded-xl border-4 border-white/80">
+          <img src="ui1.png" class="w-28 h-28 object-cover rounded-xl border-4 border-white/80">
+          <img src="ui1.png" class="w-28 h-28 object-cover rounded-xl border-4 border-white/80">
+        </div>
+      </div>
 
+      <!-- RIGHT CHARACTER -->
+      <div class="relative flex items-center justify-center">
+        <div class="absolute top-4 right-4 text-right">
+          <p class="text-2xl md:text-3xl font-bold">
+            “Please,<br>keep it down...”
+          </p>
+        </div>
 
-    <!-- Development Branch by Akbar -->
+        <img
+          src="ui.png"
+          alt="Character"
+          class="relative mt-20 md:mt-10 max-h-[560px] object-contain drop-shadow-2xl"
+        >
+      </div>
+
+    </section>
+
+    <!-- Bottom Description -->
+    <section class="relative z-10 px-8 md:px-14 pb-10">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-semibold mb-2">
+          Trinity Library Committee's Director.
+        </h2>
+
+        <p class="text-lg leading-relaxed text-white/90">
+          A quiet student who loves books and spends most of her time in the old
+          library, taking care of ancient texts and historical records.
+        </p>
+      </div>
+
+      <h3 class="text-center mt-8 text-2xl font-bold">
+        Blue<span class="text-cyan-300">Archive</span>
+      </h3>
+    </section>
+
+  </main>
 
 </body>
 </html>
